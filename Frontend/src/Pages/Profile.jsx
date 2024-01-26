@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
+import ProfileMain from '../Components/ProfileMain'
 
 const Profile = () => {
   return (
     <div>
-      <h1>Profile</h1>
+      <Navbar/>
+      <ProfileMain/>
     </div>
   )
 }
