@@ -26,4 +26,18 @@ const protect = async(req,res,next)=>{
     }
 }
 
-export {protect}
+const isAdmin = async (req, res, next) => {
+    try {
+      if (req.user.isAdmin) {
+        next();
+      } else {
+        res.status(401);
+        throw new Error("not authorized, no privillege");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+export {protect,isAdmin}

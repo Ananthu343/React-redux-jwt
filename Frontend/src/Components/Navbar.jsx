@@ -34,6 +34,9 @@ const Navbar = () => {
         {userInfo 
         ? <Link to={"/profile"}><button className='hover:bg-gray-300 h-[40px] w-[150px] hover:text-green-600'>My profile</button></Link>
         : null}
+        {userInfo?.isAdmin 
+        ? <Link to={"/admin"}><button className='hover:bg-gray-300 h-[40px] w-[150px] hover:text-blue-600'>Admin side</button></Link>
+        : null}
       </div> : null}
     </>
   )
