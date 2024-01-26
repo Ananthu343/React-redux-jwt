@@ -11,6 +11,10 @@ const ProfileMain = () => {
         fileInputRef.current.click();
     };
 
+    const handleEdit = ()=>{
+        
+    }
+
     return (
         <div className='z-0 flex justify-center'>
             <div className='min-w-full h-[500px] bg-blue-400 flex justify-center items-center'></div>
@@ -37,7 +41,7 @@ const ProfileMain = () => {
                             <span>Email :</span>
                             <span>johndoe@example.com</span>
                         </div>
-                        <button className=' bg-blue-500 text-white rounded px-4 py-2'>Edit Profile</button>
+                        <button onClick={handleEdit} className=' bg-blue-500 text-white rounded px-4 py-2'>Edit Profile</button>
                     </div>
                     
                 </div>
