@@ -20,7 +20,7 @@ router.post('/',userController.registerUser);
 router.post('/logout',userController.logout);
 router.post('/login',userController.login);
 router.post("/upload", upload?.single("avatar"), (req, res) => {
-    res.send(req.file.path.substring(16));
+    res.send(req.file.path.substring(8));
 });
 router.route('/profile').get(protect,userController.getUserProfile).put(protect,userController.updateUserProfile)
 

@@ -27,7 +27,7 @@ const ProfileMain = () => {
             <div className='min-w-full h-[500px] bg-blue-400 flex justify-center items-center'></div>
             <div className='w-[70%] h-[60%] bg-white border border-black shadow-lg absolute rounded mb-10 z-200 top-[200px] flex justify-evenly items-center'>
                 <div className='w-[300px] h-[300px]'>
-                    <div className="relative rounded-full">
+                    <div className="relative overflow-hidden border-2 shadow-lg border-blue-500 rounded-full">
                         <img src={`${img}`} alt="" className="w-full h-full object-cover relative " />
                     </div>
                 </div>

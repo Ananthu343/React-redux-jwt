@@ -50,19 +50,19 @@ const UsersTable = () => {
                         onChange={e => setSearchQuery(e.target.value)}
                     />
                 </div>
-                <table class="max-w-10 ">
-                    <thead class="bg-white border-b">
+                <table className="max-w-10 ">
+                    <thead className="bg-white border-b">
                         <tr>
-                            <th class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                 ID
                             </th>
-                            <th class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                 Name
                             </th>
-                            <th class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                 Email
                             </th>
-                            <th class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                            <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                 Actions
                             </th>
                         </tr>
@@ -77,10 +77,10 @@ const UsersTable = () => {
                             )
                             .map(user => (
                                 <tr key={user._id} class="bg-gray-100 border-b">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                         <pre>{user._id}</pre>
                                     </td>
-                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                         {editedUserId === user._id ? (
                                             <input
                                                 type="text"
@@ -96,7 +96,7 @@ const UsersTable = () => {
                                             user.name
                                         )}
                                     </td>
-                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                         {editedUserId === user._id ? (
                                             <input
                                                 type="email"
@@ -112,7 +112,7 @@ const UsersTable = () => {
                                             user.email
                                         )}
                                     </td>
-                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                         {editedUserId === user._id ? (
                                             <button
                                                 onClick={() => handleEditUser(user._id, editedUserData)}

@@ -12,18 +12,18 @@ const AdminDashboard = () => {
       {addUser && (
         <>
           <div
-            onClick={() => setAddUser(false)}
-            className="absolute inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
+            className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center"
           >
             <AddUser close={handleClose} />
           </div>
+            
         </>
       )}
       <div className="container mx-auto px-4">
         <h1 className="text-center pt-5 text-5xl font-black text-blue-500">Admin DashBoard</h1>
         <UsersTable />
         <div className="mt-5 w-full flex justify-center">
-          <button className="bg-blue-500 rounded-md px-4 py-2 text-white hover:bg-blue-700">ADD USER</button>
+          <button onClick={()=>setAddUser(true)} className="bg-blue-500 rounded-md px-4 py-2 text-white hover:bg-blue-700">ADD USER</button>
         </div>
       </div>
     </div>

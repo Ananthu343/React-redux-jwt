@@ -24,7 +24,7 @@ const AddUser = ({close}) => {
   };
 
   return (
-    <div className="  absolute  top-28 left-1/2 transform -translate-x-1/2  z-50  sm:max-w-xl sm:mx-auto">
+    <div className="  absolute  top-28 left-1/2 transform -translate-x-1/2  z-100  sm:max-w-xl sm:mx-auto">
       <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
         <div className="max-w-md mx-auto">
           <div>
@@ -111,6 +111,7 @@ const AddUser = ({close}) => {
                   </button>
                 </div>
               </div>
+              <p className="flex justify-center w-[300px] text-red-600 cursor-pointer " onClick={close}>close</p>
             </div>
           </form>
         </div>
